@@ -1,0 +1,437 @@
+/*
+font stuff
+font-family: 'Didact Gothic', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;619;630;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+
+@media (max-width: 768px) {
+    body {
+        height:100vh;
+    }
+}
+
+@media (max-width: 1350px) {
+  .homepage-images {
+    background: white;
+    height: 50em;
+    margin-bottom: 20em;
+  }
+}
+
+@media (max-width: 1005px) {
+  .homepage-images {
+    background: white;
+    height: 50em;
+    margin-bottom: 55em;
+  }
+}
+
+/*
+nav stuff
+background: rgb(245,216,133);
+background: linear-gradient(90deg, rgba(245,216,133,1) 24%, rgba(255,152,152,1) 59%, rgba(97,175,246,1) 100%);
+*/
+.NavbarItems {
+  background-color: transparent;
+  height: 5em;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  border-bottom: solid 1px var(--primary-color);
+  z-index: 1000;
+  top: 0;
+}
+
+.navbar-logo {
+  width: 6vw;
+  color: black;
+  justify-self: start;
+  margin-left: 0.25em;
+  cursor: pointer;
+  font-family: 'Fira Sans', sans-serif;
+  opacity: 1.0;
+}
+
+.navbar-logo:hover  {
+  transition: transform .5s ease;
+  transform: scale(1.2);
+
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  grid-gap: 8px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 3rem;
+  opacity: 1.0;
+}
+
+.nav-links {
+  /* color: rgb(180,50,13); */
+  color: black;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+  font-size: 20px;
+  font-family: 'Fira Sans', sans-serif;
+  border: none;
+  background: none;
+}
+
+.nav-links:hover {
+  background-color: rgb(245,202,133);
+  border-radius: 1px;
+  transition: all 0.2s ease-out;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+}
+
+/*
+button stuff
+*/
+:root {
+  --primary: rgba(180, 0, 0, 0.5);
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  padding: 8px 20px;
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #cdd209;
+  transition: 250ms;
+}
+
+.btn--primary {
+  background-color: var(--primary)
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #ffff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #ffff;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #ffff;
+}
+
+.home-page-content {
+  font-family: "Playfair Display SC";
+}
+
+.scenery {
+  background-color: rgb(245,202,133);
+  background: url(../public/static/images/cows-50.jpg) no-repeat center center;
+  background-size: cover;
+  height: 50em;
+}
+
+.homepage-greeting {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+}
+
+.homepage-name {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 6vw;
+}
+
+.homepage-intro {
+  padding-top: 25em;
+}
+
+.homepage-name {
+  position:relative;
+  bottom:0.75em;
+}
+
+/* homepage-image-row {
+  paddingg-left: -5em;
+} */
+
+/*
+image preview stuff
+*/
+
+.homepage-section-title {
+  padding-top: 1em;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size:40px;
+  margin-bottom: 1em;
+  float: left;
+}
+
+.homepage-section-subtitle {
+  padding-top: 3.2em;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size:20px;
+  margin-bottom: 1em;
+  float: right;
+  margin-left: 1em;
+}
+
+.homepage-images {
+  background: white;
+  height: 50em;
+}
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+
+   -webkit-column-count: 5;
+   -webkit-column-gap:  5px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
+
+/*
+photo page stuff
+*/
+
+
+/*
+blog title stuff
+*/
+
+.writing-list {
+  margin-top: 1em;
+  border: solid 0px;
+}
+
+.blog-title-box {
+  margin-bottom: 1em;
+}
+
+.title-links {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin-left: 0em;
+}
+
+.title-links:hover {
+  background-color: rgb(245,202,133);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.date-row {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10px;
+  color: black;
+  margin-left: 2em;
+}
+
+/*
+blog template stuff
+*/
+
+.blog-heading-row {
+  margin-top: 5em;
+  margin-left: 100em;
+  margin-right: 100em;
+}
+
+
+.blog-heading-title {
+  font-family: 'Fjalla One', sans-serif;
+  grid-area: text;
+  font-size: 8vmin;
+  color: #1d9099;
+  text-shadow: 0.5vmin 0.5vmin 0 #e79c10, -0.5vmin -0.5vmin 0 #d53a33;
+}
+
+.blog-heading-date {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.blog-subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.blog-article {
+  font-family: 'Poly', serif;
+  font-size: 18px;
+}
+
+.home-button-col {
+  margin-top: 2em;
+}
+
+.home-button {
+  /* color: rgb(180,50,13); */
+  color: black;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.home-button:hover {
+  background-color: rgb(245,202,133);
+  border-radius: 0.5px;
+  transition: all 0.2s ease-out;
+}
+
+hr.header {
+  background-color: black;
+  height: 2px;
+  width: 50em;
+  margin-right: auto;
+}
+
+.fleeting-header {
+  background: url(../public/static/images/light_gif_3.gif) -2px no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10vw;
+  font-family: 'Fira Sans', sans-serif;
+
+  /* max-width: 1200px;
+  font-size: 150px;
+  font-weight: 600;
+  font-family: 'Fira Sans', sans-serif;
+
+  /* The magic */
+  /* -webkit-background-clip: text;
+  color: transparent;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../public/static/images/light_gif.gif); */
+}
+
+.fleeting-background {
+  background-color: white;
+}
+
+.vast-background {
+  background-color: rgb(245,202,133);
+  background: url(../public/static/images/peru_vast.JPG) no-repeat center center;
+  background-size: cover;
+  height: 50em;
+  margin-bottom: 5em;
+}
+
+.vast-header {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10vw;
+  padding-top: 2.5em;
+  color: white;
+}
+
+.marvel-background {
+  background-color: rgb(245,202,133);
+  background: url(../public/static/images/marvel_2.jpeg) no-repeat center center;
+  background-size: cover;
+  height: 50em;
+  margin-bottom: 5em;
+}
+
+.marvel-header {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 10vw;
+  padding-top: 2.5em;
+  color: white;
+}
+
+.photo-grid {
+  margin-top: 5em;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+.img-description {
+  text-decoration: none;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 5vw;
+  color: #ffbe61;
+}
